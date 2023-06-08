@@ -13,30 +13,35 @@
     </header>
     
     <main>
-
         <form id="quizz1">
-            <p> estaba en el parque cuando se encontro un orco que quiso matarlo. Pero, derepente, vino un delfin y lo salvo.
-            </p>
+
+            <label for="Nombre">Dale un nombre a tu personaje:</label>
+            <input type="text" id="Nombre" name="Nombre">
             
             <br>
+            <label>Selecciona la clase</label>            
+            <br>
+
 
             <label>
-                <input type="radio" name="clase" value="orco"> Ayudarle a Pelear
+                <input type="radio" name="clase" value="orco"> Orco
             </label>
 
             <label>
-                <input type="radio" name="clase" value="esclavo"> No le salva
+                <input type="radio" name="clase" value="esclavo"> Esclavo
             </label>
             
             <label>
-                <input type="radio" name="clase" value="guerrera"> Pelear
+                <input type="radio" name="clase" value="guerrera"> Guerrero
             </label>
 
             <label>
-                <input type="radio" name="clase" value="duende"> darle una chuche
+                <input type="radio" name="clase" value="duende"> Duende
             </label>
+
             <label>
-                <input type="radio" name="clase" value="delfin"> le salva
+                <input type="radio" name="clase" value="delfin"> Delfin
+            </label>
             
             <br>
 
@@ -44,11 +49,10 @@
 
         </form>
 
-        <form id="quizz1">
 
-            <label for="usuario">Elige tu accesorio para esta aventura:</label>
-            <input type="text" id="usuario" name="usuario">
-            
+        <form id="quizz2">
+
+            <label>Elige tu accesorio para esta aventura</label>            
             <br>
 
             <label>
@@ -83,12 +87,35 @@
 
             <br>
 
-            <input type="submit" value="Enviar">
 
         </form>
 
+        <form id="quizz3">
+            <p> <b></b> estaba en el parque cuando se encontro un orco que quiso matarlo. Pero, derepente, vino un delfin y lo ayudó.
+            </p>
+            
 
+            <label>
+                <input type="radio" name="clase" value="1"> Ayudarle a Pelear
+            </label>
 
+            <label>
+                <input type="radio" name="clase" value="0"> No ayudarlo a pelear
+            </label>
+
+            <label>
+                <input type="radio" name="clase" value="2"> Darle una chuche
+            </label>
+            <label>
+                <input type="radio" name="clase" value="3"> Mirar la pelea
+            </label>
+        
+            <br>
+
+        </form>
+
+       
+        
         
 
     </main>

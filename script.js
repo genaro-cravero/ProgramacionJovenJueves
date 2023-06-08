@@ -1,10 +1,11 @@
-const form1 = document.querySelector('#quizz1');
+let form = document.querySelector('#quizz1');
+let formNum = 1;
 
-form1.addEventListener('submit', function(e)
+form.addEventListener('submit', function(e)
 {
     e.preventDefault();
 
-    let usuario = document.querySelector("#usuario").value;
+    let usuario = document.getElementById("Nombre").value;
 
     let genero = document.querySelector('input[name="genero"]:checked');
     let generoValue ;
@@ -16,8 +17,22 @@ form1.addEventListener('submit', function(e)
         console.log("No se seleccionó ningún género");
     }
     
-    document.write(usuario+"<br>");
-    document.write(generoValue);
-
-    form1.reset();
+    console.log("Nombre:", usuario);
+  
+    // Aquí puedes hacer lo que quieras con los datos
+    
+    // se reinicio
+    mostrarFormulario(formNum)
+    form.reset();
 })
+
+function mostrarFormulario(formulario) {
+
+    // const formActual = document.getElementById(`quizz${formulario}`);
+    // const formSiguiente = document.getElementById(`quizz${formulario + 1}`);
+    
+    // formActual.style.display = "block";
+    // formSiguiente.style.display = "block";
+    // formNum++;
+    // form = document.querySelector(`#quizz${formNum}`);
+  }
