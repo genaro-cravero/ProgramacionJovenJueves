@@ -15,11 +15,11 @@
     <main>
         <form id="quizz1">
 
-            <h2 for="Nombre">Dale un nombre a tu personaje:</h2>
-            <input type="text" id="Nombre" name="Nombre" class="inputText">
+            <label for="Nombre">Dale un nombre a tu personaje:</label>
+            <input type="text" id="Nombre" name="Nombre">
             
             <br>
-            <h2>Selecciona la clase</h2>            
+            <label>Selecciona la clase</label>            
             <br>
 
 
@@ -52,7 +52,7 @@
 
         <form id="quizz2">
 
-            <h2>Elige tu accesorio para esta aventura</h2>            
+            <label>Elige tu accesorio para esta aventura</label>            
             <br>
 
             <label>
@@ -114,8 +114,31 @@
 
         </form>
 
+    </form>
 
-       
+    <form id="quizz3">
+        <p> <b></b> estaba en el parque cuando se encontro un orco que quiso matarlo. Pero, derepente, vino un delfin y lo ayudó.
+        </p>
+        
+
+        <label>
+            <input type="radio" name="clase" value="0"> Ayudarle a Pelear
+        </label>
+
+        <label>
+            <input type="radio" name="clase" value="Muertesegura"> No ayudarlo a pelear
+        </label>
+
+        <label>
+            <input type="radio" name="clase" value="2"> Resulta que esa chuche era mágica y el delfin consiguio superpoderes.
+        </label>
+        <label>
+            <input type="radio" name="clase" value="3">El orco te ve y piensa que eres el amigo de el defin y te mata.
+        </label>
+    
+        <br>
+
+    </form>
     <form id="quizz3"> 
         <p> <b></b> Resulta que esa chuche era mágica y el delfin consiguio superpoderes.
         </p>
@@ -126,7 +149,7 @@
         </label>
 
         <label>
-            <input type="radio" name="clase" value="0"> Quedarse mirando.
+            <input type="radio" name="clase" value="Nadapaso"> Quedarse mirando.
 
          
             
@@ -143,26 +166,25 @@
         
 
         <label>
-            <input type="radio" name="clase" value="1"> Esquivas el ataque del orco.
+            <input type="radio" name="clase" value="Ayudardelfin"> Esquivas el ataque del orco.
         </label>
 
         <label>
-            <input type="radio" name="clase" value="0"> Intentas luchar con el orco.
+            <input type="radio" name="clase" value="Ganaste"> Intentas luchar con el orco.
             
         </label>
 
         <label>
-            <input type="radio" name="clase" value="2"> Te quedas parado a que el defin haga algo.
+            <input type="radio" name="clase" value="Elkarma"> Te quedas parado a que el defin haga algo.
         </label>
         
         <br>
     </form>
-<h1>El delfin gano la pelea y se van contentos a su casa. </h1>
-<h1>Si eres duende, el orco te confundio con el delfin y te mato. </h1>
-<h1>Si te quedaste mirando, y el orco te vio pero no te hizo nada </h1>
-<h1>Si intentaste luchar con el orco, ganaste la pelea junto al delfin.</h1>
-<h1>Si te quedaste parado el orco te vio y te mato</h1>
-<h1>Te quedaste parado, pero si eres guerrero mataste al orco.</h1>
+<h1 id="Ayudardelfin">El delfin gano la pelea y se van contentos a su casa. </h1>
+<h1 id="Muertesegura ">Si eres duende, el orco te confundio con el delfin y te mato. </h1>
+<h1 id="Nadapaso">Si te quedaste mirando, y el orco te vio pero no te hizo nada </h1>
+<h1 id="Ganaste">Si intentaste luchar con el orco, ganaste la pelea junto al delfin.</h1>
+<h1 id="Elkarma">Si te quedaste parado el orco te vio y te mato</h1>
     </main>
 
     <footer>
