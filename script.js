@@ -8,7 +8,7 @@ let allFinals = document.querySelectorAll('h1');
 let allFinalsArray = Array.from(allFinals);
 
 
-let nombre,claseValue,q2, final;
+let nombre,claseValue, arma, q2, final;
 
 allFormsArray.forEach((form) => {
     form.style.display = "none";
@@ -34,6 +34,7 @@ button.addEventListener("click", () => {
         allFormsArray[currentForm].style.display = "flex";
 
     }else if(currentForm === 1){
+        arma = document.querySelector('input[name="accesorio"]:checked').value;            
 
         currentForm++;
         allFormsArray[currentForm].style.display = "flex";
@@ -45,11 +46,29 @@ button.addEventListener("click", () => {
         SwitchQuizz(q2);
                 
         allFormsArray[currentForm].style.display = "flex";
-    }else if(currentForm >= 3 && currentForm <= 6 ){
+    }else if(currentForm >= 3 && currentForm <= 5 ){
 
         final = document.querySelector(`input[name="q${currentForm}"]:checked`).value;
 
         ShowFinal(final);
+    }else if(currentForm == 6)
+    {
+        let q6 = document.querySelector(`input[name="q${currentForm}"]:checked`).value;
+        
+        if(claseValue == "duende")
+        {
+            ShowFinal("MuerteSegura");
+        }else if(q6 == "Luchar")
+        {
+            ShowFinal("Luchar"+arma);
+
+        }else if(q6 == "Esquivar"){
+
+            ShowFinal("Esquivar"+arma);
+
+        }else{
+            ShowFinal(q6);
+        }
     }
     
 
