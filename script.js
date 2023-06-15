@@ -80,7 +80,7 @@ const SwitchQuizz = (quizz) => {
 
 const ShowFinal = (final) => {
     button.style.display = "none";
-    if(claseValue === "duende"){
+    if(claseValue === "duende" && currentForm != 4){
         document.querySelector("#MuerteSegura").style.display = "flex";
     }
     else{
