@@ -1,3 +1,19 @@
+//Array = []
+//Objetos = {}
+const clases = [
+
+    {
+        src: "https://img.freepik.com/vector-gratis/personaje-dibujos-animados-orco-sobre-fondo-blanco_1308-112276.jpg",
+        alt: "Personaje Orco"
+    },
+    {
+        src: "https://img.freepik.com/vector-gratis/personaje-dibujos-animados-duende-navideno_1308-121510.jpg",
+        alt: "Personaje Duende"
+    }
+
+];
+
+
 let button = document.querySelector("button");
 
 let allForms = document.querySelectorAll('form');
@@ -9,6 +25,8 @@ let allFinalsArray = Array.from(allFinals);
 
 
 let nombre,claseValue, arma, q2, final;
+
+let classImage = document.querySelector("#imagenClase");
 
 allFormsArray.forEach((form) => {
     form.style.display = "none";
@@ -29,6 +47,17 @@ button.addEventListener("click", () => {
     if (currentForm === 0) {
         nombre = document.querySelector("#Nombre").value;
         claseValue = document.querySelector('input[name="clase"]:checked').value;
+
+        switch(claseValue){
+            case "orco":
+                classImage.src = clases[0].src; //Acceder a la propiedad del objeto
+                classImage.alt = clases[0].alt; //Acceder a la propiedad del objeto
+                break;
+            case "duende":
+                classImage.src = clases[1].src; //Acceder a la propiedad del objeto
+                classImage.alt = clases[1].alt; //Acceder a la propiedad del objeto
+                break;
+        }
 
         currentForm++;
         allFormsArray[currentForm].style.display = "flex";
